@@ -1,0 +1,19 @@
+body, h1, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+
+}
+
+#startButton {
+    margin-bottom: 40px;
+}
+
+.navbar {
+    font-size: 40px;
+    color: blue;
+}
+
+.container {
+    width: 400px;
+    margin: auto;
+}
