@@ -5,92 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 
     <title>Code Quiz</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-light bg-light mx-auto">
-      <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-light bg-light justify-content-center">
+      <a class="navbar-brand">
         <img src="timer.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Remember - You're being timed: 
+        Remember - You're being timed: <span class="showTime"></span>
       </a>
-    </nav>
-      <br>
+    </nav> 
 
     <div class="row">
         <div class="offset-4 col-8">
             <h1>Coding Quiz Challenge</h1>
         </div>
     </div>
-        <br>
+      
     <div class="row">
         <div class="offset-3 col-8">
-            <h5>Try to answer the following code related questions within the time limit,<br>
-               Keep in mind that incorrect answers may cost you some valuable seconds!</h5>
+            <h5>Try to answer the following code related questions within the time limit!</h5>
         </div>
     </div>
-    <div class="row">      
+
+    <div class="row text">      
         <div class="offset-5 col-7">
-            <button style="width:200px; height:50px; color:white;background:blue" id="startButton">
-                Start quiz now!
-            </button>
+            <button id="startButton">Start quiz now!</button>
         </div>
     </div>  
-    <div class="row">
-          <div class="offset-4 col-8"><p>Commonly used data types DO NOT include:</p></div>
-            <ol class="offset-4">
-              <li>strings</li>
-              <li>booleans</li>
-              <li>alerts</li>
-              <li>numbers</li>            
-            </ol><br>
-          </div>
-          
-    </div>
 
-    <div class="row">
-          <div class="offset-4 col-8"><p>The condition in an if/else statement is enclosed within:</p></div>
-           <ol class="offset-4">
-            <li>quotes</li>
-            <li>curly brackets</li>
-            <li>parenthesis</li>
-            <li>square brackets</li>            
-           </ol>
+<div class="custom-container">
+    <div class="row-list-blue">
+          <div class="col"><p>1. Commonly used data types DO NOT include:</p>                         
+              <input type="radio" name="first" value="strings">strings</input>
+              <input type="radio" name="first" value="booleans">booleans</input>
+              <input type="radio" name="first" value="alerts">alerts</input>
+              <input type="radio" name="first" value="numbers">numbers</input>  
+          </div>   
+    </div>
+    <div class="row-list-red">
+          <div class="col"><p>2. The condition in an if/else statement is enclosed within:</p>           
+            <input type="radio" name="second" value="quotes">quotes</input>
+            <input type="radio" name="second" value="curly">curly brackets</input>
+            <input type="radio" name="second" value="parenthesis">parenthesis</input>
+            <input type="radio" name="second" value="brackets">brackets</input>       
           </div>
     </div>
-
-    <div class="row">
-          <div class="offset-4 col-8"><p>Arrays in JavaScript can be used to store</p></div>
-          <ol class="offset-4">
-            <li>numbers and strings</li>
-            <li>other arrays </li>
-            <li>booleans</li>
-            <li>all of the above</li>            
-          </ol>
+    <div class="row-list-blue">
+          <div class="col"><p>3. Arrays in JavaScript can be used to store</p>
+            <input type="radio" name="third" value="numbers">numbers and strings</input>
+            <input type="radio" name="third" value="arrays">other arrays</input>
+            <input type="radio" name="third" value="booleans">booleans</input>
+            <input type="radio" name="third" value="all">all of the above</input>        
           </div>
     </div>
-
-    <div class="row">
-          <div class="offset-4 col-8"><p>String values must be enclosed within _____when being assigned to variables.</p></div>
-          <ol class="offset-4">
-            <li>commas</li>
-            <li>curly brackets</li>
-            <li>quotes</li>
-            <li>parenthesis</li>            
-          </ol>
+    <div class="row-list-red">
+          <div class="col"><p>4. String values must be enclosed within _____when being assigned to variables.</p>
+            <input type="radio" name="fourth" value="commas">commas</input>
+            <input type="radio" name="fourth" value="curly">curly brackets</input>
+            <input type="radio" name="fourth" value="quotes">quotes</input>
+            <input type="radio" name="fourth" value="parenthesis">pare</input>         
           </div>
-    </div>
+    </div> 
 
-    
-
-    <script src="script.js"></script>
+    <button id="submit-quiz">Submit!!!</button>
+</div> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </html>

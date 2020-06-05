@@ -4,4 +4,4 @@ This is a timer-based quiz application that stores high scores on the client sid
 
   * Clicking the "Start Quiz" button presents the user with a series of questions. The timer is initialized with a value and immediately begins countdown.
 
-  * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
+  

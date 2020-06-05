@@ -1,19 +1,47 @@
-body, h1, h5 {
+body {
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-
-}
+    font-size: 60px;  
+    color: black;
+}  
 
 #startButton {
-    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color:rgb(33, 3, 68);
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.navbar {
-    font-size: 40px;
-    color: blue;
+.custom-container {
+    text-align: center;
 }
 
-.container {
-    width: 400px;
-    margin: auto;
+.row-list-blue {
+    font-size: 23px;
+    font-weight: 300;
+    background-color: #033d5b;
+    color: white;
 }
+
+.row-list-red {
+    font-size: 23px;
+    font-weight: 300;
+    background-color: #88001b;
+    color: white;
+}
+
+#submit-quiz {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background-color:rgb(33, 3, 68);
+    margin-top: 30px;
+     
+}
+
+
+
+
