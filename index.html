@@ -3,46 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="style.css">  
     <title>Code Quiz</title>
   </head>
-  <body>
 
+  <body>
     <nav class="navbar navbar-light bg-light justify-content-center">
       <a class="navbar-brand">
         <img src="timer.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Remember - You're being timed: <span class="showTime"></span>
       </a>
     </nav> 
-
     <div class="row">
         <div class="offset-4 col-8">
             <h1>Coding Quiz Challenge</h1>
         </div>
-    </div>
-      
+    </div>      
     <div class="row">
         <div class="offset-3 col-8">
-            <h5>Try to answer the following code related questions within the time limit!</h5>
+            <h5>Try to answer the following code related questions within the time limit - click Submit when done!</h5>
         </div>
     </div>
 
-    <div class="row text">      
+    <div class="row">      
         <div class="offset-5 col-7">
             <button id="startButton">Start quiz now!</button>
         </div>
     </div>  
 
 <div class="custom-container">
-    <div class="row-list-blue">
+    <div class="row-list-blue" id="1">
           <div class="col"><p>1. Commonly used data types DO NOT include:</p>                         
               <input type="radio" name="first" value="strings">strings</input>
               <input type="radio" name="first" value="booleans">booleans</input>
@@ -59,7 +52,7 @@
           </div>
     </div>
     <div class="row-list-blue">
-          <div class="col"><p>3. Arrays in JavaScript can be used to store</p>
+          <div class="col"><p>3. Arrays in JavaScript can be used to store:</p>
             <input type="radio" name="third" value="numbers">numbers and strings</input>
             <input type="radio" name="third" value="arrays">other arrays</input>
             <input type="radio" name="third" value="booleans">booleans</input>
@@ -67,15 +60,22 @@
           </div>
     </div>
     <div class="row-list-red">
-          <div class="col"><p>4. String values must be enclosed within _____when being assigned to variables.</p>
+          <div class="col"><p>4. String values must be enclosed within _____when being assigned to variables:</p>
             <input type="radio" name="fourth" value="commas">commas</input>
             <input type="radio" name="fourth" value="curly">curly brackets</input>
             <input type="radio" name="fourth" value="quotes">quotes</input>
-            <input type="radio" name="fourth" value="parenthesis">pare</input>         
+            <input type="radio" name="fourth" value="parenthesis">parenthesis</input>         
           </div>
     </div> 
-
-    <button id="submit-quiz">Submit!!!</button>
+    <div class="row-list-blue">
+      <div class="col"><p>Bonus - Which University Coding Bootcamp has the coolest teaching staff?</p>
+        <input type="radio" name="fifth" value="Hawaii">Hawaii</input>
+        <input type="radio" name="fifth" value="Alaska">Alaska</input>
+        <input type="radio" name="fifth" value="Miami">Miami</input>
+        <input type="radio" name="fifth" value="Michigan">Michigan</input>         
+      </div>
+</div> 
+    <button id="submit-quiz">Submit</button>
 </div> 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

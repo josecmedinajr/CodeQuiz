@@ -18,16 +18,26 @@ body {
     text-align: center;
 }
 
+.row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .row-list-blue {
+    padding-top: 20px;
+    padding-bottom: 30px;
     font-size: 23px;
-    font-weight: 300;
+    font-weight: 200;
+    height: 130px;
     background-color: #033d5b;
     color: white;
 }
 
 .row-list-red {
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: 23px;
-    font-weight: 300;
+    font-weight: 200;
     background-color: #88001b;
     color: white;
 }
